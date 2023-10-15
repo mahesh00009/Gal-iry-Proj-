@@ -1,0 +1,153 @@
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .images-container{
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .image-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+  }
+  
+  .image-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .title-input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .delete-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding:5px 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    
+  }
+  
+  .delete-button:hover {
+    background-color: #dd0000;
+  }
+  
+  .upload-button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+ 
+  .stored-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .stored-image-container {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stored-image img {
+    max-width: 100%;
+    max-height: 150px; 
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  hr{
+    margin: 20px 0;
+  }
+  
+  .stored-title {
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .upload-button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .upload-button:disabled:hover {
+    cursor: not-allowed;
+  }
+ 
+.file-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.file-input-label {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.file-input-label:hover {
+  background-color: #0056b3;
+}
+
+.file-input {
+  display: none;
+}
+
+
+.signout-button {
+  background-color: #ff4c4c; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-left:30px;
+}
+
+.signout-button:hover {
+  background-color: #e60000; 
+}
